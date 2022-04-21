@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+
+<body>
+    <!--
+        --------------CARACTERISTICAS VIDEO--------------------
+        ATRIBUTOS               VALOR                               DESCRIPCION
+    1. src=""                URL/archivo.extension          Contenido a reproducir
+    2. poster=""            URL/archivo.extension(local)    Muestra imagen a modo de presentacion
+    3. preload=""           auto/metadata/none              Indica como realiza una precarga del video
+    4. metiagroup=""        nombre                          Hace referencia al nombre de un grupo de contenidos
+    5. autoplay=""          bolean(true|false)              Reproduccion automatica
+    6. loop=""              bolean(true|false)              ciclo continuado de reproduccion
+    7. muted=""             bolean(true|false)              Establece el video en su reproduccion sin sonido
+    8. controls=""          bolean(true|false)              Muestra controles del entorno cliente.
+    9.width=""              pixels                          ancho
+    10. height=""           pixels                          alto
+
+    SINTAXIS:
+
+    <video>
+            <source/>
+    </video>
+-->
+    <video width="33%" poster="images/toppng.com-icono-de-reproductor-de-musica-980x980.png" autoplay="true"
+        controls="controls" preload="none">
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </video>
+    <!--
+    video recomendado
+-->
+    <video width="33%" autoplay="true" loop="true" controls="controls" muted="true">
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </video>
+    <!--
+    Youtube, Vimeo, Dailymotion, y ....otros, utilizaremos la etiqueta <iframe>, como detalle reconoceremos
+        el atributo allowfullscreean, nos permite que los videos se puedan mostrar en pantalla completa.
+-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oPr8ZqRHTQo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <!--Otro mas de prueba, funcionando?-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DKLjCxuKpL8" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe style="width:33%;height:33%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0"
+            type="text/html" src="https://www.dailymotion.com/embed/video/x33md7g" width="100%" height="100%"
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+
+</html>
