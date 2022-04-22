@@ -1,0 +1,80 @@
+/*
+CSS
+Definido como hojas de estilo CSS(Cascading Style Sheet), no es mas que otro lenguaje
+con la finalidad de poder definir la presentacion de los documentos estructurados en
+Html
+*/
+/*
+1. ESTILO PARA UNA ETIQUETA O MAS
+Sintaxis General:
+etiqueta{
+    atributo:Valor;
+}
+*/
+h3,
+h2,
+h1,
+h5,
+h6 {
+    color: slategrey;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*
+@import 
+url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+2. ESTILO PARA UNA ETIQUETA CON IDENTIFICADOR
+    Sintaxis:
+    #NombreId{
+        Atributo: Valor;
+    }
+    Lo trasladaremos el estilo apuntando con el selector, o indicador [id]
+    */
+#p2 {
+    background-color: darkorange;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+/*
+    3.ESTILO ESTANDAR, PARA APLICAR ESTILOS CON EL ATRIBUTO CLASE(Class)
+    Sintaxis General:
+    .NombreReferencia{
+        Atributo:Valor;
+    }
+    */
+.supercalifragilistico {
+    color: green;
+    text-align: center;
+}
+
+/*
+    El selector de Identificacion(id) será representado en (#)
+    El selector de clase (class) será representado en (.)
+    La diferencia que podemos en contrar entre id y class, será por un lado
+    id se puede usar para identificar un solo elemento dentro de su estilo, y class
+     podrá usarse para uno o mas, desde la agrupacion.
+    */
+p.amarillo {
+    color: yellowgreen;
+}
+
+table,
+th,
+td {
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+ol{
+    list-style: upper-roman;
+    text-align: center;
+}
+
+ul
+ {
+    list-style: square;
+}
