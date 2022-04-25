@@ -1,0 +1,72 @@
+p{
+    background-color: #ededed;
+    font-family: "Open Sans",sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+nav{
+    width: 400px;
+    background-color: #e4d9e0;
+    /*
+    margin: Establece el margen para los cuatro lados.
+    Es una abreviacion para evitar tener que establecer cada
+    lado por separado con las otras propiedades de margen
+    ->auto: 0px de margen vertical, centrado horizontalmente. 
+    */
+    margin: 0 auto;
+}
+li a{
+    color: #238cf5;
+}
+span{
+    background: #68aaec;
+    /*
+    padding: Establece el espacio de relleno requerido por todos
+    los lados del elemento. Es decir, el area de padding es el 
+    espacio entre el contenido del elemento y su borde. Por añadido
+    no podrá existir valores negativos
+    */
+    padding: 30px;
+    color: white;
+    font-size: 50px;
+    /*
+    Display: Valores mas utilizados son block y  inline que hacen que la caja
+    de un elemento sea de bloque o en linea respectivamente.
+    Block, se transforma en elementos de bloque, por lo que siempre
+    empiezan en una nueva linea y siempre ocupan todo el espadio disponible en la linea
+    , aunque los contenidos no ocupen todo su sitio.
+    */
+    display: block;
+}
+#tocar{
+    /*
+    Opacity: Se define como la transparencia de un elemento, e d:
+    en que grado se superpone el fondo del elemento. 0 = invisible
+    1= solido(opaco)
+    */
+    opacity: 0;
+    height: 0;
+}
+.desliz{
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    /*
+    clear: Especifica que si un elemento puede estar al lado de elementos flotantes
+    que lo preceden o si debe ser movido
+
+    overflow: hidden, entendo como contenido recortado y no se muestran barras de posicion
+    */
+     overflow: hidden;
+    clear: both;
+    transition: .5s;
+}
+.desliz li{
+    padding: 20px;
+}
+#tocar:checked+.desliz{
+    height: 400px;
+}
+
