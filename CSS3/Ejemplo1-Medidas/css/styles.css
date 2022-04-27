@@ -1,0 +1,15 @@
+html{
+    font-size: 32px;
+}
+.em li{
+    font-size: 1.3em;
+}
+/*
+1 em=16px
+*/
+.rem li{
+    font-size: 1.3rem;
+}
+li{
+    font-size: 80%;
+}

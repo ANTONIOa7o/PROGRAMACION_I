@@ -1,0 +1,84 @@
+div{
+    margin: 0 auto;
+}
+/*
+ASOCIACION (:) selector conjugando etiqueta y atributo
+*/
+input:disabled{
+    color: red;
+    
+}
+/*
+Recreacion bootstrap, actua sobre un elemento que adquiere foco
+*/
+input:focus{
+    border: thick solid skyblue;
+}
+/*
+Solo los campos de tipo checkbox que sean marcados su etiqueta se muestre
+roja y negra,podremos utilizar el llamado selector adyacente (+), donde
+aplicará el estilo asociado a el mismo
+*/
+input[type=checkbox]:checked+label{
+    font-weight: bold;
+    color: red;
+}
+/*
+Seleccionar elementos una directiva planteadad
+Comenzar por una seleccion
+*/
+ol li[id^='J']{
+    background-color: yellow;
+}
+/*
+Finalice en una selecion
+*/
+ol li[id$='a']{
+    background-color: aqua;
+}
+/*
+Contenga determinados elementos en una seleccion
+*/
+ol li[id*='r']{
+    background-color: deeppink;
+}
+table,tr,td{
+    width: 30%;
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+/*
+pseudo-clase; Sintaxis= nth-child(an+b) nos ayudará a seleccionar varios elementos
+hijos de la clase, indicando la posicion, segun el elemento (o formula), ejemplo seran
+pares e impares
+*/
+/*tr:nth-child(odd){/*Pares
+    background-color: lemonchiffon
+}*/
+tr:nth-child(even){/*Impares*/
+background-color: lightcoral;
+}
+#tablasPeriodicas tr:nth-child(odd){/*Pares*/
+    background-color: yellow
+}
+/*
+Podemos entenderlos como nuevos pseudo-elementos de gran uso:
+:first-child (seleciona primer elemento)
+:first-letter(Selecciona primera letra)
+:before (Nos posiciona al inicio del contenido)
+:after (Nos posicionara al final del contenido)
+:nth-of-type() (en funcion de la posición del elemento)
+*/
+ul li:first-child{
+    background-color: palegreen;
+}
+ul li:nth-child(7){
+    background-color: purple;
+}
+p:nth-of-type(1){
+    font-weight: bold;
+}
+p:nth-of-type(3){
+    color: red;
+}
