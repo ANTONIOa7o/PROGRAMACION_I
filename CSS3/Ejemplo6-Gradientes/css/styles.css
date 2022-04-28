@@ -1,0 +1,67 @@
+div {
+    width: 30%;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    background-color: lightblue;
+}
+
+#defecto {
+    background: linear-gradient(rgb(103, 103, 180),
+            rgb(236, 169, 236),
+            rgb(231, 231, 125));
+}
+
+#izq_drch {
+    background: linear-gradient(to right,
+            rgb(171, 171, 234),
+            rgb(227, 182, 227),
+            rgb(223, 223, 127));
+}
+#drch_izq {
+    background: linear-gradient(to left,
+            rgb(171, 171, 234),
+            rgb(227, 182, 227),
+            rgb(223, 223, 127));
+}
+#arriba{
+    background: linear-gradient(to top,
+            rgb(171, 171, 234),
+            rgb(227, 182, 227),
+            rgb(223, 223, 127));
+
+}
+#diagonal_drch{
+    background: linear-gradient(to bottom right,
+            rgb(171, 171, 234),
+            rgb(227, 182, 227),
+            rgb(223, 223, 127));
+}
+#diagonal_izq{
+    background: linear-gradient(to bottom left,
+            rgb(171, 171, 234),
+            rgb(227, 182, 227),
+            rgb(223, 223, 127));
+}
+#centro{
+    background: radial-gradient(blue,violet,yellow);
+}
+#gradienteRedondeado{
+    background: radial-gradient(blue 10%,violet 60%,yellow 90%);
+    border-radius: 50%;
+    width: 100px;
+}
+#circular{
+    background: radial-gradient(circle,blue,violet,yellow);
+}
+#elipse{
+    background: radial-gradient(ellipse,blue,violet,yellow);
+}
+#opacidad{
+    background: linear-gradient(to bottom right, white 70%, blue);
+    width: 75%;
+    height: 200px;
+}
+#repetir{
+    background: repeating-radial-gradient( blue 10%,violet 20%,yellow 30%);
+}

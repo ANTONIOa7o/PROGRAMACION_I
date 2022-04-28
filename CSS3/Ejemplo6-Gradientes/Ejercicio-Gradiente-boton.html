@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion de Gradientes</title>
+</head>
+<body>
+    <style>
+/*
+La pseudo-clase :active;
+Representacion, parecida a un boton(elemento), donde el usuario genera
+la activación. Inicia el usuario al presionar el boton primario del raton, y
+seguidamente activa la accion pero no temina; hasta que no suelta el boton,
+Sintasix::
+        etiqueta,elemento:active{
+            atributos
+        }
+*/
+p:active{
+    text-align: right;
+    font-size: x-large;
+    font-weight: bold;
+    background: linear-gradient(yellow,green,red);
+    color: white;
+}
+img{
+    width: 150px;
+    height: 50px;
+    border-radius: 20%;
+}
+div{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 20%;
+    box-shadow: 2px 2px 5px gray;
+    background-color: cornsilk;
+    margin: 0 auto;
+}
+img:active{
+    background: repeating-linear-gradient(rgb(140, 229, 140) 10%,rgb(107, 200, 107) 20%,rgb(95, 180, 95) 30%);
+}
+    </style>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, nam!
+        Nisi a maiores quo quis reprehenderit quas. Natus, tempora officia!
+        Nihil minus ut vitae saepe animi architecto quod, voluptatem quae.
+        Magni sapiente tempore quae, expedita molestiae quibusdam nihil quasi et.
+        Praesentium veritatis dolor consequuntur vel eligendi, eveniet iste ad repellendus?
+        Dolor, facilis. Possimus corrupti deserunt delectus maiores consequuntur esse similique?
+        Quisquam, impedit earum. Corporis ex magnam magni. Quos, aspernatur excepturi.
+        Eaque doloremque sequi sint, eveniet similique architecto ea necessitatibus corporis?
+        Tempora soluta tenetur est eos aut cupiditate reiciendis quo asperiores?
+        Illo nesciunt molestias, inventore alias dolorem consequatur tempore nostrum accusantium.
+    </p>
+    <!--
+        Ejercicio: Usando una imagen, al presionarla genere un cambio visual en el usuario y me lleve
+        a un enlace(otra pagina)
+    -->
+    <div>
+        <a href="https://www.google.com"><img src="images/google.png" /></a>
+    </div>
+
+
+</body>
+</html>
