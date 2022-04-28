@@ -1,0 +1,53 @@
+/*
+Las transiciones serán una forma de interactuar con el usuario, cambiando las propiedades de
+CSS,en un principio los cambios se producía de manera brusca, la ventaja CSS3, es generar mas
+suavidad en el cambio y además permite definir ese cambio entre dos estados del elemento.
+Aqui ademas presentamos el pseudo-elemento :hover, cuando el usuario interactua con un elemento,
+pero no necesariamente lo activa
+*/
+.menu {
+    background-color: rgb(212, 205, 205);
+    color: white;
+    border-color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px rgb(139, 137, 137);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color, 0.6s border-radius, 0.6s;
+    text-decoration: none;
+
+}
+
+.menu:hover {
+    background-color: rgb(238, 212, 212);
+    color: black;
+    box-shadow: 2px 2px 4px rgb(139, 137, 137);
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.centro {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#caja:hover {
+    width: 70%;
+    min-height: 20px;
+    background-color: lightgrey;
+}
+
+#caja {
+    width: 30em;
+    min-height: 10em;
+    background-color: gray;
+    border-radius: 4px;
+    padding: 1em;
+    font-weight: bold;
+    transition: width 2s, height 4s, background-color 6s;
+    text-align: center;
+}
