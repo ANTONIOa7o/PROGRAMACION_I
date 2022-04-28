@@ -1,0 +1,55 @@
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(247, 205, 126);
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    /*
+    El atributo de la animacion:_
+    hemos de definir
+    1.Nombre
+    2.Duracion
+    3.Consecucion
+    */
+    animation-name: animacion1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/*
+@keyframes, aqui podremos controlar los pasos intermedios o definidos en una secuencia
+de animacion, a través de los keyframes(puntos de trayectoria),ed. A lo largo de una secuencia
+será desarrollado por determinados puntos definidos, en el tiempo de su ejecucion.
+*/
+@keyframes animacion1 {
+    0%{
+        background-color: rgb(247, 205, 126) ;
+        font-size: 1em;
+    }
+    25%{
+        background-color: orange;
+        font-size: 4em;
+        width: 400px;
+        border: 0.1em solid black;
+        /*
+        La propiedad transform: Nos permitira poder modificar el espacio, teniendo como referencia
+        los ejes de coordenadas. Permitiendo así hacer rotaciones, traslaciones, escalados, ..etc.
+        */
+        transform: translateX(400px);
+    }
+    50%{
+        background-color: orangered;
+        font-size: 1em;
+        width: 300px;
+        transform: translateX(400px) translateY(400px) rotate(45deg);
+    }
+    75%{
+        background-color: lightsalmon;
+        font-size: 3em;
+        width: 300px;
+        transform: translateY(400px);
+        opacity: 0;
+     /*   border-radius: 50%;*/
+    }
+
+}
